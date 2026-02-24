@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+        <item>
+         <widget class="QLabel" name="subjectLabel">
+          <property name="text">
+           <string>Дисциплина:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="subjectComboBox"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="titleTab">
+       <attribute name="title">
+        <string>Титульный лист</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Лабораторная работа №</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="workNumber">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Тема</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="workTheme"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,3">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>ФИО студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="studentName"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,3">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Группа</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="studentGroup"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,3">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>ФИО руководителя</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="teacherName"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="purposeTab">
+       <attribute name="title">
+        <string>Цель работы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTextEdit" name="purposeTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="taskTab">
+       <attribute name="title">
+        <string>Задание</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTextEdit" name="taskTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="theoryTab">
+       <attribute name="title">
+        <string>Теоретические сведения</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTextEdit" name="theoryTextEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="theoryAddImageBtn">
+          <property name="text">
+           <string>Добавить изображение</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="setupTab">
+       <attribute name="title">
+        <string>Описание экспериментальной установки</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTextEdit" name="setupTextEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setupAddImageBtn">
+          <property name="text">
+           <string>Добавить изображение</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="resultTab">
+       <attribute name="title">
+        <string>Результаты работы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QTextEdit" name="resultTextEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resultAddImageBtn">
+          <property name="text">
+           <string>Добавить изображение</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="analysisTab">
+       <attribute name="title">
+        <string>Анализ результатов работы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QTextEdit" name="analysisTextEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="analysisAddImageBtn">
+          <property name="text">
+           <string>Добавить изображение</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="conclusionTab">
+       <attribute name="title">
+        <string>Выводы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QTextEdit" name="conclusionTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="generateReportBtn">
+      <property name="text">
+       <string>Сформировать отчет</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
