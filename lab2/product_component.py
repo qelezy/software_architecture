@@ -35,10 +35,7 @@ def component_from_dict(data: Dict[str, Any]) -> ProductComponent:
     if type_name == "composite":
         from assembly_unit import AssemblyUnit
 
-        composite = AssemblyUnit(
-            name=data["name"],
-            assembly_time=float(data.get("assembly_time", 0.0)),
-        )
+        composite = AssemblyUnit(name=data["name"])
         for child_entry in data.get("children", []):
             quantity = int(child_entry.get("quantity", 1))
             child_data = child_entry.get("component")

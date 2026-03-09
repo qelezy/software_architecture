@@ -8,12 +8,10 @@ from product_component import ProductComponent
 
 @dataclass
 class AssemblyUnit(ProductComponent):
-    assembly_time: float
     children_list: List[Tuple[ProductComponent, int]] = field(default_factory=list)
 
-    def __init__(self, name: str, assembly_time: float) -> None:
+    def __init__(self, name: str) -> None:
         ProductComponent.__init__(self, name)
-        self.assembly_time = float(assembly_time)
         self.children_list = []
 
     def add(self, component: ProductComponent, quantity: int = 1) -> None:
@@ -43,7 +41,6 @@ class AssemblyUnit(ProductComponent):
         return {
             "type": "composite",
             "name": self.name,
-            "assembly_time": self.assembly_time,
             "children": [
                 {
                     "quantity": quantity,
