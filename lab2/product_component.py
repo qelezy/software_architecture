@@ -26,7 +26,7 @@ class ProductComponent(ABC):
         return []
 
     @abstractmethod
-    def serialize(self) -> Dict[str, Any]:
+    def to_dict(self) -> Dict[str, Any]:
         raise NotImplementedError
 
 

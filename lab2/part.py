@@ -17,7 +17,7 @@ class Part(ProductComponent):
     def get_time(self) -> float:
         return self.time
 
-    def serialize(self) -> Dict[str, Any]:
+    def to_dict(self) -> Dict[str, Any]:
         return {
             "type": "leaf",
             "name": self.name,

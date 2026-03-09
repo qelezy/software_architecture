@@ -1,14 +1,12 @@
 {
   "type": "composite",
   "name": "Редуктор ЦО-40",
-  "assembly_time": 0.0,
   "children": [
     {
       "quantity": 1,
       "component": {
         "type": "composite",
         "name": "Корпус редуктора",
-        "assembly_time": 0.0,
         "children": [
           {
             "quantity": 1,
@@ -54,7 +52,6 @@
       "component": {
         "type": "composite",
         "name": "Вал быстроходный",
-        "assembly_time": 0.0,
         "children": [
           {
             "quantity": 1,
@@ -91,7 +88,6 @@
       "component": {
         "type": "composite",
         "name": "Вал тихоходный",
-        "assembly_time": 0.0,
         "children": [
           {
             "quantity": 1,

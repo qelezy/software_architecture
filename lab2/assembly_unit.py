@@ -37,14 +37,14 @@ class AssemblyUnit(ProductComponent):
             total_time += component.get_time() * quantity
         return total_time
 
-    def serialize(self) -> Dict[str, Any]:
+    def to_dict(self) -> Dict[str, Any]:
         return {
             "type": "composite",
             "name": self.name,
             "children": [
                 {
                     "quantity": quantity,
-                    "component": child.serialize(),
+                    "component": child.to_dict(),
                 }
                 for child, quantity in self.children_list
             ],

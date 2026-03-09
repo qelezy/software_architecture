@@ -139,7 +139,7 @@ class MainWindow(QMainWindow):
         if not file_name:
             return
         try:
-            data = self.current_root.serialize()
+            data = self.current_root.to_dict()
             Path(file_name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception as exc:
             QMessageBox.critical(self, "Сохранение", f"Не удалось сохранить файл:\n{exc}")
