@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>САПР изделия</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+    <item>
+     <layout class="QVBoxLayout" name="leftLayout">
+      <item>
+       <widget class="QLabel" name="catalogLabel">
+        <property name="text">
+         <string>Каталог изделий</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="catalog_list"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="quantityLayout">
+        <item>
+         <widget class="QLabel" name="quantityLabel">
+          <property name="text">
+           <string>Количество изделий</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="quantity_spin">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="show_from_catalog_btn">
+        <property name="text">
+         <string>Отобразить</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="load_btn">
+        <property name="text">
+         <string>Загрузить из файла</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_btn">
+        <property name="text">
+         <string>Сохранить в файл</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="leftSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="rightLayout">
+      <item>
+       <widget class="QTreeWidget" name="tree">
+        <column>
+         <property name="text">
+          <string>Наименование</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Тип</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Кол-во</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Стоимость за ед.</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Время за ед.</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="total_cost_label">
+        <property name="text">
+         <string>Общая стоимость: -</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="total_time_label">
+        <property name="text">
+         <string>Общее время: -</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

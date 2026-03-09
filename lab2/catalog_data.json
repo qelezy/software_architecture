@@ -1,0 +1,332 @@
+{
+  "items": [
+    {
+      "id": "gearbox",
+      "name": "Редуктор цилиндрический",
+      "root": {
+        "type": "composite",
+        "name": "Редуктор ЦО-40",
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Корпус редуктора",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Корпус литой",
+                    "cost": 5200.0,
+                    "time": 3.0
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Крышка корпуса",
+                    "cost": 1800.0,
+                    "time": 1.5
+                  }
+                },
+                {
+                  "quantity": 12,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Болт М12х40",
+                    "cost": 35.0,
+                    "time": 0.05
+                  }
+                },
+                {
+                  "quantity": 12,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Шайба 12",
+                    "cost": 4.0,
+                    "time": 0.02
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Вал быстроходный",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Вал быстроходный заготовка",
+                    "cost": 950.0,
+                    "time": 2.0
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Шестерня 18 зубьев",
+                    "cost": 1350.0,
+                    "time": 1.2
+                  }
+                },
+                {
+                  "quantity": 2,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Подшипник 6205",
+                    "cost": 420.0,
+                    "time": 0.1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Вал тихоходный",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Вал тихоходный заготовка",
+                    "cost": 1150.0,
+                    "time": 2.2
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Зубчатое колесо 60 зубьев",
+                    "cost": 2100.0,
+                    "time": 1.4
+                  }
+                },
+                {
+                  "quantity": 2,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Подшипник 6306",
+                    "cost": 680.0,
+                    "time": 0.15
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Шпонка 18х11х56",
+                    "cost": 55.0,
+                    "time": 0.05
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Масло индустриальное И-40А (5 л)",
+                    "cost": 750.0,
+                    "time": 0.2
+                  }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pump",
+      "name": "Насос центробежный",
+      "root": {
+        "type": "composite",
+        "name": "Насос К20-30",
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Гидравлическая часть",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Корпус спиральный",
+                    "cost": 4300.0,
+                    "time": 3.2
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Крышка подшипниковая",
+                    "cost": 920.0,
+                    "time": 1.0
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Рабочее колесо",
+                    "cost": 2600.0,
+                    "time": 1.6
+                  }
+                },
+                {
+                  "quantity": 2,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Уплотнение торцевое",
+                    "cost": 540.0,
+                    "time": 0.3
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Приводной узел",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Электродвигатель 3 кВт 1500 об/мин",
+                    "cost": 18500.0,
+                    "time": 0.5
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Рама сварная",
+                    "cost": 2700.0,
+                    "time": 1.8
+                  }
+                },
+                {
+                  "quantity": 4,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Амортизирующая опора",
+                    "cost": 180.0,
+                    "time": 0.1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "compressor",
+      "name": "Компрессор поршневой",
+      "root": {
+        "type": "composite",
+        "name": "Компрессор КМ-25",
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Силовой блок",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Цилиндр чугунный",
+                    "cost": 3200.0,
+                    "time": 3.0
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Поршень в сборе с кольцами",
+                    "cost": 1850.0,
+                    "time": 2.5
+                  }
+                },
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Клапанная плита",
+                    "cost": 1450.0,
+                    "time": 1.4
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "composite",
+              "name": "Привод",
+              "children": [
+                {
+                  "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Электродвигатель 4 кВт 1000 об/мин",
+                    "cost": 22800.0,
+                    "time": 0.6
+                  }
+                },
+                {
+                  "quantity": 2,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Шкив",
+                    "cost": 960.0,
+                    "time": 0.4
+                  }
+                },
+                {
+                  "quantity": 2,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Клиноременная передача SPA-1320",
+                    "cost": 410.0,
+                    "time": 0.2
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "quantity": 1,
+                  "component": {
+                    "type": "leaf",
+                    "name": "Воздушный ресивер 50 л",
+                    "cost": 7600.0,
+                    "time": 1.5
+                  }
+          }
+        ]
+      }
+    }
+  ]
+}
+

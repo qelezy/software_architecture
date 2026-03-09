@@ -1,0 +1,145 @@
+{
+  "type": "composite",
+  "name": "Редуктор ЦО-40",
+  "assembly_time": 0.0,
+  "children": [
+    {
+      "quantity": 1,
+      "component": {
+        "type": "composite",
+        "name": "Корпус редуктора",
+        "assembly_time": 0.0,
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Корпус литой",
+              "cost": 5200.0,
+              "time": 3.0
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Крышка корпуса",
+              "cost": 1800.0,
+              "time": 1.5
+            }
+          },
+          {
+            "quantity": 12,
+            "component": {
+              "type": "leaf",
+              "name": "Болт М12х40",
+              "cost": 35.0,
+              "time": 0.05
+            }
+          },
+          {
+            "quantity": 12,
+            "component": {
+              "type": "leaf",
+              "name": "Шайба 12",
+              "cost": 4.0,
+              "time": 0.02
+            }
+          }
+        ]
+      }
+    },
+    {
+      "quantity": 1,
+      "component": {
+        "type": "composite",
+        "name": "Вал быстроходный",
+        "assembly_time": 0.0,
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Вал быстроходный заготовка",
+              "cost": 950.0,
+              "time": 2.0
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Шестерня 18 зубьев",
+              "cost": 1350.0,
+              "time": 1.2
+            }
+          },
+          {
+            "quantity": 2,
+            "component": {
+              "type": "leaf",
+              "name": "Подшипник 6205",
+              "cost": 420.0,
+              "time": 0.1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "quantity": 1,
+      "component": {
+        "type": "composite",
+        "name": "Вал тихоходный",
+        "assembly_time": 0.0,
+        "children": [
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Вал тихоходный заготовка",
+              "cost": 1150.0,
+              "time": 2.2
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Зубчатое колесо 60 зубьев",
+              "cost": 2100.0,
+              "time": 1.4
+            }
+          },
+          {
+            "quantity": 2,
+            "component": {
+              "type": "leaf",
+              "name": "Подшипник 6306",
+              "cost": 680.0,
+              "time": 0.15
+            }
+          },
+          {
+            "quantity": 1,
+            "component": {
+              "type": "leaf",
+              "name": "Шпонка 18х11х56",
+              "cost": 55.0,
+              "time": 0.05
+            }
+          }
+        ]
+      }
+    },
+    {
+      "quantity": 1,
+      "component": {
+        "type": "leaf",
+        "name": "Масло индустриальное И-40А (5 л)",
+        "cost": 750.0,
+        "time": 0.2
+      }
+    }
+  ]
+}
