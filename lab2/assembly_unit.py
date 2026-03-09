@@ -1,18 +1,14 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
 from typing import Any, Dict, List, Tuple
 
 from product_component import ProductComponent
 
 
-@dataclass
 class AssemblyUnit(ProductComponent):
-    children_list: List[Tuple[ProductComponent, int]] = field(default_factory=list)
-
     def __init__(self, name: str) -> None:
         ProductComponent.__init__(self, name)
-        self.children_list = []
+        self.children_list: List[Tuple[ProductComponent, int]] = []
 
     def add(self, component: ProductComponent, quantity: int = 1) -> None:
         if quantity <= 0:

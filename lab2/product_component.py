@@ -16,15 +16,6 @@ class ProductComponent(ABC):
     def get_time(self) -> float:
         raise NotImplementedError
 
-    def add(self, component: "ProductComponent", quantity: int = 1) -> None:
-        raise NotImplementedError
-
-    def remove(self, component: "ProductComponent") -> None:
-        raise NotImplementedError
-
-    def children(self) -> List[Tuple["ProductComponent", int]]:
-        return []
-
     @abstractmethod
     def to_dict(self) -> Dict[str, Any]:
         raise NotImplementedError
